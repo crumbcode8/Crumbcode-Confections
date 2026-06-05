@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cupcake Lab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-brand">The Cupcake Lab</div>
+    <div class="nav-links">
+      <a href="#menu">Menu</a>
+      <a href="#story">Our Story</a>
+      <a href="#order">Order</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <div class="eyebrow">Handcrafted • Small Batch • Organic</div>
+      <h1>Whimsical Cupcakes, Baked With Heart</h1>
+      <p class="hero-sub">
+        Soft botanicals, rich flavors, and delicate textures inspired by nature.
+      </p>
+      <a href="#" class="cta" id="openOrder">Start Your Order</a>
+    </div>
+
+    <div class="hero-image-wrap">
+      <img src="https://i.imgur.com/GePGYDl.jpeg" class="hero-image" alt="Cupcake Hero" />
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section id="menu" class="section">
+    <div class="section-header">
+      <h2>Our Menu</h2>
+      <p class="section-sub">Seasonal flavors crafted with organic ingredients.</p>
+    </div>
+
+    <div class="card-grid">
+
+      <div class="card">
+        <img src="https://i.imgur.com/ygTwwcQ.jpeg" alt="24 Carrot Gold" />
+        <h3>24 Carrot Gold</h3>
+        <p>This spiced carrot cake is packed with crunchy walnuts and topped with a luscious, velvety swirl of cream cheese frosting. Delicate carrot shavings and a dash of cinnamon provide a charming finish to this cozy, garden-fresh favorite.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/DeSiZJE.jpeg" alt="Orchid Heirloom" />
+        <h3>Orchid Heirloom</h3>
+        <p>This comforting treat features a spiced apple cake with a hidden apple pie center, topped with a swirl of rich brown sugar buttercream. Finished with a generous dusting of golden crumble topping, it captures the nostalgic essence of a fresh-baked pie in every bite.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/wKwZm0p.jpeg" alt="Gilded Cocoa Cloud" />
+        <h3>Gilded Cocoa Cloud</h3>
+        <p>This rich chocolate cupcake is piled high with a decadent swirl of silky milk chocolate buttercream and finished with a delicate dusting of gold-toned sprinkles. Encased in a shimmering gold liner, it offers a sophisticated and deeply satisfying cocoa experience in every bite.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/AqVgZVj.jpeg" alt="Blue Zest Bliss" />
+        <h3>Blue Zest Bliss</h3>
+        <p>This bright treat features a lemon blueberry cake filled with tangy lemon curd and topped with a smooth lemon cream cheese frosting. Finished with a sprinkle of fresh zest and a single plump blueberry, it offers a perfectly balanced burst of tart and sweet flavors.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/nUm2Lyt.jpeg" alt="The Main Squeeze" />
+        <h3>The Main Squeeze</h3>
+        <p>This vibrant treat features a zesty lemon cake hidden with a tart lemon curd center, all piled high with a swirl of intense raspberry buttercream. Crowned with a fresh berry, a lemon slice, and a whimsical straw, it’s a refreshing burst of sunshine in every bite.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/OkFpZ0r.jpeg" alt="Berry Modest" />
+        <h3>Berry Modest</h3>
+        <p>A fluffy vanilla bean cake conceals a heart of luscious strawberry reserves, topped with a silky swirl of classic vanilla buttercream. Garnished with a beautifully fanned fresh strawberry, this treat is a timeless, sweet-and-creamy delight that never goes out of style.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://i.imgur.com/GePGYDl.jpeg" alt="Midnight Orchid" />
+        <h3>Midnight Orchid</h3>
+        <p>This decadent chocolate cupcake hides a silky ganache core beneath a lush crown of velvety vanilla buttercream. Elegantly adorned with a delicate white flower and artistic chocolate flourishes, it is the perfect balance of deep cocoa and light, creamy sweetness.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section id="story" class="section">
+    <div class="section-header">
+      <h2>Our Story</h2>
+      <p class="section-sub">Inspired by nature and crafted with intention.</p>
+    </div>
+    <p class="story-text">
+      The Cupcake Lab blends organic ingredients with botanical artistry to create cupcakes that feel as magical as they taste.
+    </p>
+  </section>
+
+  <!-- ORDER SECTION -->
+  <section id="order" class="section">
+
+    <div class="order-bottom-cta-wrap">
+      <a href="#" class="cta" id="openOrderBottom">Start Your Order</a>
+    </div>
+
+    <div class="section-header">
+      <h2>Ready to Order?</h2>
+      <p class="section-sub">Choose your cupcakes and submit your order below.</p>
+    </div>
+  </section>
+
+  <!-- ORDER FORM MODAL -->
+  <div id="orderModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+
+      <h2>Start Your Order</h2>
+
+      <form id="orderForm" action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="New Cupcake Order" />
+        <input type="hidden" name="order_summary" id="orderSummaryField" />
+
+        <div class="field-group">
+          <label>Your Name</label>
+          <input type="text" id="name" name="name" required />
+          <div class="error-message"></div>
+        </div>
+
+        <div class="field-group">
+          <label>Email</label>
+          <input type="email" id="email" name="email" required />
+          <div class="error-message"></div>
+        </div>
+
+        <div class="field-group">
+          <label>Phone Number</label>
+          <input type="tel" id="phone" name="phone" required />
+          <div class="error-message"></div>
+        </div>
+
+        <div class="field-group">
+          <label>Pickup Date</label>
+          <input type="date" id="pickup" name="pickup_date" required />
+          <div class="error-message"></div>
+        </div>
+
+        <h3>Cupcakes</h3>
+
+        <div class="cupcake-row">
+          <span>24 Carrot Gold — $6</span>
+          <input type="number" min="0" value="0" data-price="6" data-name="24 Carrot Gold" class="qty" name="carrot_gold_qty" />
+        </div>
+
+        <div class="cupcake-row">
+          <span>Orchid Heirloom — $6</span>
+          <input type="number" min="0" value="0" data-price="6" data-name="Orchid Heirloom" class="qty" name="orchid_heirloom_qty" />
+        </div>
+
+        <div class="cupcake-row">
+          <span>Gilded Cocoa Cloud — $5</span>
+          <input type="number" min="0" value="0" data-price="5" data-name="Gilded Cocoa Cloud" class="qty" name="gilded_cocoa_qty" />
+        </div>
+
+        <div class="cupcake-row">
+          <span>Blue Zest Bliss — $6</span>
+          <input type="number" min="0" value="0" data-price="6" data-name="Blue Zest Bliss" class="qty" name="blue_zest_qty" />
+        </div>
+
+        <div class="cupcake-row">
+          <span>The Main Squeeze — $6</span>
+          <input type="number" min="0" value="0" data-price="6" data-name="The Main Squeeze" class="qty" name="main_squeeze_qty" />
+        </div>
+
+        <div class="cupcake-row">
+          <span>Berry Modest — $5</span>
+          <input type="number" min="0" value="0" data-price="5" data-name="Berry Modest" class="qty" name="berry_modest_qty" />
+        </div>
+
+        <div class="cupcake-row">
+          <span>Midnight Orchid — $6</span>
+          <input type="number" min="0" value="0" data-price="6" data-name="Midnight Orchid" class="qty" name="midnight_orchid_qty" />
+        </div>
+
+        <h3>Total: $<span id="orderTotal">0</span></h3>
+        <div class="error-message" id="cupcakeError"></div>
+
+        <h3>Order Summary</h3>
+        <div id="orderSummary" class="order-summary">No items selected yet.</div>
+
+        <button type="submit" class="cta submit-btn">Submit Order</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- SUCCESS MODAL -->
+  <div id="successModal" class="modal">
+    <div class="modal-content success-content">
+      <span class="close-success">&times;</span>
+      <h2>Order Received</h2>
+      <p>Thank you! Your order has been submitted. We’ll contact you soon to confirm pickup.</p>
+      <button class="cta" id="successOk">Okay</button>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2>Contact Us</h2>
+      <p class="section-sub">We’d love to hear from you</p>
+    </div>
+
+    <div class="contact-box">
+      <p><strong>Phone:</strong> <a href="tel:9136670715">913‑667‑0715</a></p>
+      <p><strong>Email:</strong> <a href="mailto:cupcakelabstudio@gmail.com">cupcakelabstudio@gmail.com</a></p>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>

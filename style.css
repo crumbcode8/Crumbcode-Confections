@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Segoe+UI:wght@300;400;600&display=swap");
 
-/* GLOBAL RESET */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
 
-/* GLOBAL */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
@@ -21,7 +19,7 @@ body {
   color: #2F4F2F;
 }
 
-/* HEADINGS — GOLD ACCENT ONLY */
+/*headers */
 h1, h2, h3 {
   font-family: "Playfair Display", serif;
   font-weight: 600;
@@ -29,7 +27,7 @@ h1, h2, h3 {
   text-shadow: 0 2px 6px rgba(212,160,23,0.25);
 }
 
-/* SUBHEADINGS + CARD TITLES → BOTANICAL GREEN */
+/* subheadings */
 .section-sub,
 .card h3,
 .story-text,
@@ -39,7 +37,7 @@ h1, h2, h3 {
   color: #2F4F2F;
 }
 
-/* NAV */
+/* navbar */
 .navbar {
   position: sticky;
   top: 0;
@@ -88,7 +86,7 @@ h1, h2, h3 {
   color: #B8860B;
 }
 
-/* HERO */
+/* hero */
 .hero {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -104,7 +102,7 @@ h1, h2, h3 {
   box-shadow: 0 14px 40px rgba(155,191,155,0.35);
 }
 
-/* CTA BUTTON */
+/* CTA button */
 .cta {
   display: inline-block;
   padding: 0.9rem 2.4rem;
@@ -127,7 +125,7 @@ h1, h2, h3 {
   box-shadow: 0 6px 16px rgba(212,160,23,0.45);
 }
 
-/* SECTIONS */
+/* sections */
 .section {
   padding: 3.5rem 1.5rem;
 }
@@ -139,7 +137,12 @@ h1, h2, h3 {
   padding-bottom: 0.5rem;
 }
 
-/* MENU GRID */
+#story .section-header {
+  border-top: 2px solid #9BBF9B;
+  padding-top: 0.5rem;
+}
+
+/* menu griud */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -148,7 +151,7 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 
-/* CARD — SAGE BORDER + BOTANICAL GLOW */
+/* card*/
 .card {
   background: rgba(255, 255, 255, 0.85);
   border-radius: 18px;
@@ -173,7 +176,7 @@ h1, h2, h3 {
   margin-bottom: 0.8rem;
 }
 
-/* STORY */
+/* story */
 .story-text {
   max-width: 760px;
   margin: 0 auto;
@@ -181,13 +184,13 @@ h1, h2, h3 {
   line-height: 1.8;
 }
 
-/* ORDER BUTTON ABOVE HEADING */
+/*order button */
 .order-bottom-cta-wrap {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-/* MODAL */
+/* modal */
 .modal {
   display: none;
   position: fixed;
@@ -204,117 +207,4 @@ h1, h2, h3 {
 }
 
 .modal-content {
-  background: rgba(255, 255, 255, 0.95);
-  border-radius: 18px;
-  padding: 1.2rem;
-  width: 92%;
-  max-width: 360px;
-  max-height: 90vh;
-  overflow-y: auto;
-  border: 1px solid #9BBF9B;
-  box-shadow: 0 12px 28px rgba(155,191,155,0.35);
-  position: relative;
-}
-
-.close-modal,
-.close-success {
-  position: absolute;
-  right: 1rem;
-  top: 0.8rem;
-  font-size: 1.8rem;
-  cursor: pointer;
-  color: #444;
-}
-
-/* FORM */
-.field-group {
-  margin-top: 1rem;
-}
-
-.field-group input {
-  width: 100%;
-  padding: 0.7rem;
-  border-radius: 10px;
-  border: 1px solid #ccc;
-  font-size: 1rem;
-}
-
-.field-group input:focus {
-  border-color: #9BBF9B;
-  box-shadow: 0 0 6px rgba(155,191,155,0.45);
-}
-
-/* CUPCAKE ROWS */
-.cupcake-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0.6rem 0;
-}
-
-.cupcake-row span {
-  flex: 1;
-  padding-right: 10px;
-  word-break: break-word;
-}
-
-.cupcake-row input {
-  width: 70px;
-  padding: 0.4rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-/* ORDER SUMMARY */
-.order-summary {
-  margin-top: 0.6rem;
-  padding: 0.8rem;
-  border-radius: 10px;
-  background: rgba(247, 245, 241, 0.9);
-  border: 1px solid #9BBF9B;
-  font-size: 0.95rem;
-  max-height: 160px;
-  overflow-y: auto;
-  box-shadow: inset 0 0 10px rgba(155,191,155,0.25);
-}
-
-/* SUBMIT BUTTON */
-.submit-btn {
-  width: 100%;
-  margin-top: 1rem;
-}
-
-/* CONTACT SECTION */
-.contact-box {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 1.8rem;
-  background: rgba(255, 255, 255, 0.85);
-  border: 1px solid #9BBF9B;
-  border-radius: 16px;
-  box-shadow: 0 6px 18px rgba(155,191,155,0.35);
-  text-align: center;
-  font-size: 1.1rem;
-}
-
-.contact-box a {
-  color: #2F4F2F;
-  text-decoration: none;
-  font-weight: 600;
-}
-
-.contact-box a:hover {
-  text-decoration: underline;
-}
-
-/* RESPONSIVE */
-@media (max-width: 480px) {
-  .modal-content {
-    max-width: 340px;
-    padding: 1rem;
-  }
-
-  .cupcake-row input {
-    width: 56px;
-  }
-}
+  background: rgba(255, 255
